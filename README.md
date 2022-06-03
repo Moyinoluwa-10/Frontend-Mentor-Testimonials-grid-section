@@ -1,1 +1,1 @@
-# Project_3
+# Frontend Mentor | Testimonials grid section solution
