@@ -27,20 +27,23 @@ body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
     background-color: var(--Light-gray);
-    padding: 85px 100px;
+    padding: 0;
+    margin: 0;
 }
 
 #main {
    display: grid;
-   row-gap: 25px;
-   column-gap: 55px;
+   row-gap: 20px;
+   column-gap: 60px;
+   margin: 100px auto 50px auto;
+   width: 870px;
 } 
 
 /* Styling Sections */
 #section1 { 
     border-style: none;
     background-color: var(--Moderate-violet);
-    padding: 20px 0 15px 30px;
+    padding: 20px 10px 15px 30px;
     border-radius: 8px;
     color: var(--Light-grayish-blue);
     width: 100%;
@@ -53,7 +56,7 @@ body {
 #section2 {
     border-style: none;
     background-color: var(--Very-dark-grayish-blue);
-    padding: 20px 0 15px 30px;
+    padding: 20px 10px 15px 30px;
     border-radius: 8px;
     color: var(--Light-grayish-blue);
     width: 100%;
@@ -64,7 +67,7 @@ body {
 #section3 {
     border-style: none;
     background-color: var(--White);
-    padding: 20px 0 15px 30px;
+    padding: 20px 10px 15px 30px;
     border-radius: 8px;
     color: var(--Very-dark-blackish-blue);
     width: 100%;
@@ -75,7 +78,7 @@ body {
 #section4 {
     border-style: none;
     background-color: var(--Very-dark-blackish-blue);
-    padding: 20px 0 15px 30px;
+    padding: 20px 10px 15px 30px;
     border-radius: 8px;
     color: var(--Light-grayish-blue);
     width: 100%;
@@ -207,7 +210,7 @@ img {
     width: 90px;
     height: 90px;
     top: -54px;
-    right: 90px;
+    right: 51px;
 }
 
 .attribution { 
@@ -222,96 +225,26 @@ img {
 
 
 /* Responsiveness */
-@media screen and (min-width:900px ) and (max-width:1080px ) {
-    body {
-        padding: 85px 70px;
-    }
-
-    #main {
-        display: grid;
-        row-gap: 25px;
-        column-gap: 75px;
-    } 
-
-    #section1 {
-        padding-right: 20px;
-    }
-
-    #section1 br {
-        display: none;
-    }
-
-    #section2 {
-        padding-right: 20px;
-    }
-
-    #section2 br {
-        display: none;
-    }
-
-    #section3 {
-        padding-right: 20px;
-    }
-
-    #section3 br {
-        display: none;
-    }
-
-    #section4 {
-        padding-right: 20px;
-    }
-
-    #section4 br {
-        display: none;
-    }
-
-    #section5 {
-        padding-right: 20px;
-    }
-
-    #section5 br {
-        display: none;
-    }
-}
-
-@media screen and (min-width:700px ) and (max-width:900px ) {
-    body {
-        padding: 85px 190px;       
-    }
-
+@media screen and (min-width:500px ) and (max-width:980px) {
     #main{
         display: grid;
         justify-content: center;
         align-items: center;
+        row-gap: 20px;
+        column-gap: 20px;
         box-sizing: border-box;
-        width: 100%;
-    }
-
-    h3 > br {
-        display: none;
-    }
-
-    p > br {
-        display: none;
+        width: 440px;
     }
 
     #section1 {
-        grid-column: 1;
+        grid-column: 1 / span 2;
         grid-row: 1;
         box-sizing: border-box;
         width: 100%;
-        padding: 20px 30px;
+        padding: 20px 30px ;
     }
 
     #section2 {
-        grid-column: 1;
-        grid-row: 2;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px 30px;
-    }
-
-    #section3 {
         grid-column: 1;
         grid-row: 3;
         box-sizing: border-box;
@@ -319,7 +252,7 @@ img {
         padding: 20px 30px;
     }
 
-    #section4 {
+    #section3 {
         grid-column: 1;
         grid-row: 4;
         box-sizing: border-box;
@@ -327,108 +260,20 @@ img {
         padding: 20px 30px;
     }
 
-    #section5 {
-        grid-column: 1;
-        grid-row: 5;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px 30px;
-    }
-
-    #pic {
-        width: 85px;
-        right: -2px;
-    }
-
-    .head {
-        line-height: 20px ;
-    }
-
-    #section1 .word {
-        line-height: 17px;
-    }
-
-    #section2 .word {
-        line-height: 17px;
-    }
-
-    #section3 .word {
-        line-height: 17px;
-    }
-
-    #section4 .word {
-        line-height: 17px;
-    }
-
-    #section5 .word {
-        line-height: 17px;
-    }
-}
-
-@media screen and (min-width:500px ) and (max-width:700px ) {
-    body {
-        padding: 85px 100px;       
-    }
-
-    #main{
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        width: 100%;
-    }
-
-    h3 > br {
-        display: none;
-    }
-
-    p > br {
-        display: none;
-    }
-
-    #section1 {
-        grid-column: 1;
-        grid-row: 1;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px 30px;
-    }
-
-    #section2 {
-        grid-column: 1;
+    #section4 {
+        grid-column: 1 / span 2;
         grid-row: 2;
         box-sizing: border-box;
         width: 100%;
         padding: 20px 30px;
     }
 
-    #section3 {
-        grid-column: 1;
-        grid-row: 3;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px 30px;
-    }
-
-    #section4 {
-        grid-column: 1;
-        grid-row: 4;
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px 30px;
-    }
-
     #section5 {
-        grid-column: 1;
-        grid-row: 5;
+        grid-column: 2;
+        grid-row: 3 / span 2;
         box-sizing: border-box;
         width: 100%;
         padding: 20px 30px;
-    }
-
-    #pic {
-        width: 85px;
-        right: -2px;
     }
 
     .head {
@@ -436,37 +281,33 @@ img {
     }
 
     #section1 .word {
-        line-height: 17px;
+        line-height: 15px;
     }
 
     #section2 .word {
-        line-height: 17px;
+        line-height: 15px;
     }
 
     #section3 .word {
-        line-height: 17px;
+        line-height: 15px;
     }
 
     #section4 .word {
-        line-height: 17px;
+        line-height: 15px;
     }
 
     #section5 .word {
-        line-height: 17px;
+        line-height: 15px;
     }
 }
 
 @media screen and (max-width:500px ) {
-    body {
-        padding: 85px 27px;       
-    }
-
     #main{
         display: grid;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        width: 100%;
+        width: 260px;
     }
 
     h3 > br {
@@ -519,7 +360,7 @@ img {
 
     #pic {
         width: 85px;
-        right: -2px;
+        right: -10px;
     }
 
     .head {
